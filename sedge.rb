@@ -13,11 +13,11 @@ class Sedge < Formula
       url "https://github.com/NethermindEth/sedge/releases/download/v#{app_version}/sedge-v#{app_version}-darwin-arm64"
       sha256 "ec886b0bc9e6950868295340d71fe310128d11a37bebec8a93affa82e5fa439c"
     when OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/NethermindEth/sedge/releases/download/v#{app_version}/sedge-v#{app_version}-linux-amd64"        
-        sha256 "acefa1f7535c10796e04fdfc4e1e41e9c648e23bd232505b2074f90aca9d329f"
+      url "https://github.com/NethermindEth/sedge/releases/download/v#{app_version}/sedge-v#{app_version}-linux-amd64"        
+      sha256 "acefa1f7535c10796e04fdfc4e1e41e9c648e23bd232505b2074f90aca9d329f"
     when OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/NethermindEth/sedge/releases/download/v#{app_version}/sedge-v#{app_version}-linux-arm64"        
-        sha256 "f741df4d6f0723f007c1ea6f1075832c061725b4ac9649ef10b2caf33fe13443"
+      url "https://github.com/NethermindEth/sedge/releases/download/v#{app_version}/sedge-v#{app_version}-linux-arm64"        
+      sha256 "f741df4d6f0723f007c1ea6f1075832c061725b4ac9649ef10b2caf33fe13443"
     else
       odie "Unexpected platform!"
     end
