@@ -8,9 +8,9 @@ echo =======================================================
 
 cd /tmp/binaries
 
-darwin_amd64_hash="$(shasum -a 256 sedge-v$VERSION-darwin-amd64/* | awk '{ print $1}')"
-darwin_arm64_hash="$(shasum -a 256 sedge-v$VERSION-darwin-arm64/* | awk '{ print $1}')"
-linux_amd64_hash="$(shasum -a 256 sedge-v$VERSION-linux-amd64/* | awk '{ print $1}')"
+darwin_amd64_hash="$(shasum -a 256 sedge-$VERSION-darwin-amd64/* | awk '{ print $1}')"
+darwin_arm64_hash="$(shasum -a 256 sedge-$VERSION-darwin-arm64/* | awk '{ print $1}')"
+linux_amd64_hash="$(shasum -a 256 sedge-$VERSION-linux-amd64/* | awk '{ print $1}')"
 
 cd /home/runner/work/sedge/sedge/homebrew-sedge/Formula
 
