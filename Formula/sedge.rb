@@ -1,5 +1,5 @@
 class Sedge < Formula
-    app_version = 'v1.3.2'
+    app_version = 'v1.6.0'
     desc "A one click setup tool for PoS network/chain validators."
     homepage "https://docs.sedge.nethermind.io/"
     license "Apache License 2.0"
@@ -8,13 +8,13 @@ class Sedge < Formula
     case
     when OS.mac? && Hardware::CPU.intel?
       url "https://github.com/NethermindEth/sedge/releases/download/#{app_version}/sedge-#{app_version}-darwin-amd64"
-      sha256 "573e38d2de82cfd3c77e6799f4b2917f0f1d7aaeb0537c1b706d49c0c5f80438"
+      sha256 "077f69a7d1fdcda7b29f2c00bcdb365ec41ddd2ac7daf1c597c7fa2ee2317504"
     when OS.mac? && Hardware::CPU.arm?
       url "https://github.com/NethermindEth/sedge/releases/download/#{app_version}/sedge-#{app_version}-darwin-arm64"
-      sha256 "7e42cf3ad1774053687da1bbc6c670559da0e653fd96ef351249ebe79002e5cb"
+      sha256 "90f3ec1aa44914544dbf89833de5bb152d814ed6a8479e8fb96d6617c25565c0"
     when OS.linux? && Hardware::CPU.intel?
       url "https://github.com/NethermindEth/sedge/releases/download/#{app_version}/sedge-#{app_version}-linux-amd64"        
-      sha256 "6bb8d6d902e3cfb841093d3305a2123a85d4143df62d778ac1680be7aaae7996"
+      sha256 "1af747807e700382f787b17de1a86705bc802daa3f895753be3b45070444cb15"
     else
       odie "Unexpected platform!"
     end
